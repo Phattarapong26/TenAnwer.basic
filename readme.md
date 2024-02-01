@@ -3,4 +3,4 @@
 <b>ตัวอย่าง : </b><br>
 <img src= 'document/example.png' alt='sample'>
 
-<a href='https://github.com/Phattarapong26/TenAnswers'> ทดลองเล่นเกมส์ </a>
+<a href='https://Phattarapong26.github.io/TenAnswers'> ทดลองเล่นเกมส์ </a>
