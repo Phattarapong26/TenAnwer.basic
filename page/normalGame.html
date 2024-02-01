@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="view" content="width=device-width, initial-scale=1.0">
+    <title>EasyGame</title>
+    <link rel="stylesheet" href="/source/style/normalGame.css">
+</head>
+</head>
+
+<body>
+    <div class="Screens">
+        <div class="Header" style="padding-left: 2rem; padding-right: 2rem;">
+            <div class="BackHome">
+                <a href="/page/home.html">
+                    <button id="Back"
+                        style="background-color: rgb(41, 41, 4); color: var(--secondary-color);">Home</button>
+                </a>
+            </div>
+            <div class="Game">
+                <button id="Reset" style="background-color: rgb(41, 41, 41); color: var(--secondary-color)"
+                    onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+        <div class="mainFeat" style="width: 100%; height: 80%;">
+            <div class="inputS" style="border: 1px solid black; margin-top: 2rem;">
+                <input type="number" id="guessInput">
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button onclick="guessNumber()"
+                    style="background-color: var(--accent-color); width: var(--width-input); height: var(--height-input); border-radius: 30px; margin-top: 0rem;">ทาย</button>
+            </div>
+            <div class="resultS" style="display: flex; justify-content: center;">
+                <p id="result"></p>
+            </div>
+            <div class="attempts"
+                style="background-color: black; width: 50%; text-align: center; border-radius: 30px; color: var(--secondary-color);">
+                <p>ทายได้อีกแค่: <span id="attemptsLeft"></span> ครั้ง</p>
+            </div>
+        </div>
+        <div class="MainPOP1"
+            style="background-color: var(--bg-dark); height: 100vh; width: 430px; position: absolute; z-index: 99; display: none;">
+            <div class="Pop"
+                style="width: var(--width-pop); height: var(--height-pop); background-color: white; border-radius: var(--border-radius); text-align: center; margin-left: var(--margin-left-pop); margin-top: var(--margin-top-pop); padding-top: var(--padding-top-pop);">
+                <h1 style="margin-top: 4rem;">YOU WIN !!!</h1>
+                <p style="color: black;">คุณนี่มันคือเทพส่งมาเกิดชัดๆ!!</p>
+                <p1 style="color: black;">แน่จริงก็ลองอีกสักครั้งสิ!</p1>
+                <div class="buttonPop"
+                    style="display: flex; justify-content: space-between; width: 80%; margin-left: 2rem; margin-top: 6rem; height: var(--button-height);">
+                    <a href="/page/home.html"><button id="Homepop">Home</button></a>
+                    <a href="/page/easyGame.html"><button id="Againpop"
+                            style="color: rgb(255, 149, 0);">Again</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="MainPOP2"
+            style="background-color: var(--bg-dark); height: 100vh; width: 430px; position: absolute; z-index: 99; display: none;">
+            <div class="Pop"
+                style="width: var(--width-pop); height: var(--height-pop); background-color: white; border-radius: var(--border-radius); text-align: center; margin-left: var(--margin-left-pop); margin-top: var(--margin-top-pop); padding-top: var(--padding-top-pop);">
+                <h1 style="margin-top: 4rem;">YOU LOSE !!!</h1>
+                <p style="color: black;">คุณนี่มันแมนยูชัดๆ! ที่สะกดคำว่าชนะไม่เป็น</p>
+                <p1 style="color: black;">แน่จริงก็ลองอีกสักครั้งสิ!</p1>
+                <div class="buttonPop"
+                    style="display: flex; justify-content: space-between; width: 80%; margin-left: 2rem; margin-top: 6rem; height: var(--button-height);">
+                    <a href="/page/home.html"><button id="Homepop">Home</button></a>
+                    <a href="/page/normalGame.html"><button id="Againpop" style="color: rgb(255, 149, 0);">Again</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/source/js/normalGame.js"></script>
+</body>
+
+</html>
